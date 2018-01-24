@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Anon</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>NewUser</display-name>
+    <servlet-name>NewUser</servlet-name>
+    <servlet-class>com.scsu.anon.controller.NewUserRegistrationController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewUser</servlet-name>
+    <url-pattern>/NewUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.scsu.anon.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Chat</display-name>
+    <servlet-name>Chat</servlet-name>
+    <servlet-class>com.scsu.anon.controller.ChatClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chat</servlet-name>
+    <url-pattern>/Chat</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChatSend</display-name>
+    <servlet-name>ChatSend</servlet-name>
+    <servlet-class>com.scsu.anon.controller.ChatSendController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChatSend</servlet-name>
+    <url-pattern>/ChatSend</url-pattern>
+  </servlet-mapping>
+</web-app>
